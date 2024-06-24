@@ -1,11 +1,27 @@
 package org.lessons.java.shop;
 
+import java.util.Scanner;
+
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		//creo un nuovo oggetto
+		
+		/*Scanner input = new Scanner (System.in);
+		
+		System.out.println("Digita il nome del prodotto");
+		String productName = input.nextLine();
+		System.out.println("Digita la descrizione del prodotto");
+		String productDescription = input.nextLine();
+		System.out.println("Digita il prezzo del prodotto");
+		double productPrice = input.nextDouble();
+		System.out.println("Digita l'iva del prodotto");
+		int productIva = input.nextInt();
+		
+		Prodotto prodottoA = new Prodotto (productName, productDescription, productPrice, productIva);*/
+		
 		Prodotto prodottoA = new Prodotto ("Chair", "Una sedia a 4 gambe", 150, 22);
 		
 		//provo i metodi get

@@ -73,7 +73,6 @@ public class Prodotto {
 	
 	//come funziona con static?
 	public String getPaddingCode () {
-		
 		String paddingCode = String.format("%1$" + 8 + "s", productCode).replace(' ', '0');
 		return paddingCode;
 	}
