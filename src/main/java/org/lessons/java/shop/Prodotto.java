@@ -16,11 +16,11 @@ public class Prodotto {
 
 	Random random = new Random ();
 		
-	this.productCode = random.nextInt(99999);
+	this.productCode = random.nextInt(9999);
 	this.productName = productName;
 	this.productDescription = productDescription;
 	this.productPrice = productPrice;
-	this.productIva = productIva;
+	this.productIva = productIva; 
 	}
 	
 	//getter e setter (productCode solo in lettura)
@@ -69,6 +69,13 @@ public class Prodotto {
 	public String getNameExtended () {
 		String fullName = productCode + "-" + productName;
 		return fullName;
+	}
+	
+	//come funziona con static?
+	public String getPaddingCode () {
+		
+		String paddingCode = String.format("%1$" + 8 + "s", productCode).replace(' ', '0');
+		return paddingCode;
 	}
 	
 }

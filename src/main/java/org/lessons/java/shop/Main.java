@@ -29,6 +29,7 @@ public class Main {
         //provo i metodi della classe
 		System.out.println("Il prezzo comprensivo di Iva è €: " + prodottoA.getPriceAndIva());
 		System.out.println("Il nome completo del prodotto è: " + prodottoA.getNameExtended());
+		System.out.println("Il codice con padding è: " + prodottoA.getPaddingCode());
 		
 	}
 
